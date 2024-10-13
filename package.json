@@ -1,0 +1,19 @@
+{
+  "name": "mono-react-nodejs-workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ThanuMahee12/mono-react-nodejs-workspace.git",
+  "author": "ThanuMahee12 <thanumahee440@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts":{
+"start":"concurrently \"yarn workspace server start\" \"yarn workspace client start\""
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

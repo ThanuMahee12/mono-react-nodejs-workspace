@@ -1,0 +1,23 @@
+# Handle all text files with automatic end-of-line normalization
+* text=auto
+
+# Handle specific types of files as text
+*.jsx  diff=javascript
+*.js   diff=javascript
+*.ts   diff=javascript
+*.tsx  diff=javascript
+*.css diff=css
+*.html diff=html
+
+# Treat binary files (images, videos, etc.) properly
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.svg  binary
+*.mp4  binary
+
+# Optionally, manage large files via Git LFS (if enabled)
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+
+*.lock merge=ours
